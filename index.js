@@ -1,6 +1,5 @@
 module.exports = function(addressComponents) {
   var normalizedAddress = {};
-  console.log(addressComponents);
 
   addressComponents.forEach(function(item, index, array) {
     switch(item.types[0]) {
