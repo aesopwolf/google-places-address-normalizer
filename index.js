@@ -7,7 +7,7 @@ module.exports = function(addressComponents) {
         normalizedAddress.address = item.long_name;
         break;
       case 'route':
-        normalizedAddress.address = normalizedAddress.address + ' ' + item.long_name;
+        normalizedAddress.address = (normalizedAddress.address || '') + ' ' + item.long_name;
         break;
       case 'neighborhood':
         normalizedAddress.neighborhood = item.long_name;
